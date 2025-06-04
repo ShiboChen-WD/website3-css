@@ -1,0 +1,100 @@
+/* place your CSS code here */
+
+/* General Styles for All Pages */
+body {
+    font-family: Arial, sans-serif;  /* Change to a sans-serif font for modern feel */
+    font-size: 16px;  /* Base font size for easy readability */
+    line-height: 1.5;  /* Improved line spacing for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;  /* Modern, clean font for headers */
+    font-size: 2rem;  /* Ensures headers are larger than body text */
+    color: #333;  /* Dark color for visibility */
+    margin-bottom: 0.5em;  /* Adds space below headers */
+}
+
+p {
+    font-family: 'Georgia', serif;  /* Serif font for paragraphs for a touch of elegance */
+    font-size: 1rem;  /* Ensures readability */
+    color: #555;  /* Slightly lighter than black for softer text */
+}
+
+a {
+    text-decoration: none;  /* Removes underline for a cleaner look */
+    color: #0066cc;  /* Blue color for links */
+    transition: color 0.3s, background-color 0.3s;  /* Smooth transition for hover */
+}
+
+a:visited {
+    color: #9900cc;  /* Purple color for visited links */
+}
+
+a:hover {
+    color: #ffffff;  /* White text on hover for contrast */
+    background-color: #0066cc;  /* Blue background on hover */
+}
+
+a:active {
+    color: #ffffff;  /* White text when link is clicked */
+    background-color: #003366;  /* Darker blue when active */
+}
+
+/* Styles for About Me & More About Me Pages */
+section {
+    padding: 20px;  /* Adds space inside sections */
+    margin-bottom: 20px;  /* Space between sections */
+    border: 2px solid #ccc;  /* Light border around sections */
+    border-radius: 10px;  /* Rounded corners for a modern look */
+}
+
+#my_background {
+    background-color: #f0f8ff;  /* Light blue background for the background section */
+}
+
+#my_interests {
+    background-color: #ffebcd;  /* Light beige background for the interests section */
+}
+
+/* About Me Page */
+#my_background {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#my_interests {
+    background-color: #ffebcd;  /* Light beige background for this section */
+}
+
+/* Specific h2 Styling within Section */
+#my_background h2, #my_interests h2 {
+    font-size: 1.5rem;  /* Slightly larger for section headers */
+    color: #003366;  /* Darker color for h2 within sections */
+}
+
+/* Responsive Design: Make sure everything looks good on smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;  /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem;  /* Adjust main header size for small screens */
+    }
+
+    h2 {
+        font-size: 1.25rem;  /* Adjust section header size for small screens */
+    }
+
+    section {
+        padding: 15px;  /* Less padding for small screens */
+    }
+
+    img {
+        width: 100%;  /* Make images responsive */
+        max-width: 300px;  /* Limit image width */
+    }
+}
